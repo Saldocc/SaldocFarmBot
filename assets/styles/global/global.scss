@@ -1,0 +1,18 @@
+* {
+	outline: none !important;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+}
+
+body {
+	background: #ebecf1 !important;
+	display: block !important; //AuthProvider'ı _app.js'ye ekleyince display:none sorunu veriyordu geçici bir çözüm
+}
+
+.center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
