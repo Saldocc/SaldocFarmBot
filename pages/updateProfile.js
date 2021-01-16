@@ -76,12 +76,12 @@ function UpdateProfile() {
               placeholder="Leave blank to keep the same"
             />
           </Form.Group>
-          <Button disabled={loading} className="w-100" type="submit">
+          <button disabled={loading} className="w-100 main-btn" type="submit">
             Update
-            </Button>
+            </button>
         </Form>
         <div className="w-100 text-center mt-3">
-          <Link href="/"><a>Cancel</a></Link>
+          <Link href="/dashboard"><a>Cancel</a></Link>
         </div>
       </Card.Body>
     </Card>

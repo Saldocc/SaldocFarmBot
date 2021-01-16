@@ -1,3 +1,7 @@
+.dashboard {
+	padding: 20px 0;
+}
+
 .navbar {
 	display: flex;
 	align-items: center;
@@ -5,13 +9,13 @@
 	background: #fff;
 	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.075);
 	border-radius: 10px;
-	padding: 20px;
-	margin: 20px;
+	padding: 15px 20px 13px 35px;
+	margin: 0 20px;
 }
 
 .product-grid {
 	width: 99%;
-	margin: 0 auto 2rem;
+	margin: 0.75rem auto 2rem;
 	&-wrapper {
 		display: flex;
 		flex-wrap: wrap;
@@ -20,13 +24,14 @@
 		padding: 10px;
 		float: left;
 		width: 20%;
+		border-radius: 15px;
 	}
 	&-product {
 		position: relative;
 		cursor: pointer;
 		background: #fff;
-		border-radius: 10px;
 		transition: all 0.2s ease-in-out;
+		border-radius: 15px;
 		&:hover {
 			box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
 		}
@@ -35,13 +40,14 @@
 		height: 12rem;
 		border: none;
 		padding: 10px;
-		span:first-of-type{
-			font-size:24px;
+		border-radius: 15px;
+		span:first-of-type {
+			font-size: 24px;
 			font-weight: bold;
 			color: rgb(70, 70, 70);
 		}
-		span:last-of-type{
-			font-size:18px;
+		span:last-of-type {
+			font-size: 18px;
 			display: block;
 			margin-top: 0.3rem;
 		}

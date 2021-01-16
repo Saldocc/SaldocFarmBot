@@ -55,9 +55,10 @@ function SignUp() {
               <Form.Label>Confirm Password</Form.Label>
               <Form.Control type="password" placeholder="Confirm Password" ref={passwordConfirmRef} required />
             </Form.Group>
-            <Button disabled={loading} variant="primary" type="submit">
+            <button disabled={loading} className="main-btn py-2
+            w-100" type="submit">
               Login
-          </Button>
+          </button>
           </Form>
         </Card.Body>
         <div className="w-100 text-center mt-2">
