@@ -1,17 +1,14 @@
 import firebase from "firebase/app"
 import "firebase/auth"
 import "firebase/firestore"
-/**
- * ! .env.local oluşturdum fakat oradaki değerleri buraya çekerken sıkıntı yapaşadım
- */
 
 const config = {
-  apiKey: "AIzaSyDmZwtWFTIUwrhFFNilmIkj8ufNVRJimAk",
-  authDomain: "auth-development-47724.firebaseapp.com",
-  projectId: "auth-development-47724",
-  storageBucket: "auth-development-47724.appspot.com",
-  messagingSenderId: "1024222452079",
-  appId: "1024222452079:web:8e8df20b1432a78316309a"
+  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
+  authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMANIN,
+  projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
 };
 
 const firebaseApp = firebase.apps && firebase.apps.length > 0 ? firebase.apps[0] : firebase.initializeApp(config)
