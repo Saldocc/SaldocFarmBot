@@ -46,16 +46,10 @@ const Index = ({ datas }) => {
   let field3 = fields.map((field) => field.field3);
   let field4 = fields.map((field) => field.field4);
   let field5 = fields.map((field) => field.field5);
-  console.log(field1, field2, field3, field4, field5);
 
   return (
     <div>
-      {/* <h1>getServerSideProps</h1>
-      <p>{field1}</p>
-      <p>{field2}</p>
-      <button onClick={() => postData()} className="btn btn-primary">
-        Send
-      </button> */}
+
       <Container fluid>
         <div className="dashboard">
           <Navbar>
