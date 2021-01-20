@@ -60,13 +60,6 @@ function Dashboard() {
       });
   }
 
-  // function deleteFromDatabase(name, product) {
-  //   db.collection("users").doc(currentUser.uid).collection("products").update({
-  //     name: firebase.firestore.FieldValue.delete(),
-  //     code: firebase.firestore.FieldValue.delete()
-  //   });
-  // }
-
   async function handleLogout() {
     setError("")
     try {

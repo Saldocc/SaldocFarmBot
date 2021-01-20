@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Link from 'next/link';
 import Image from 'next/image'
 import companyLogo from './../assets/images/logoText.svg';
-import illustration from './../assets/images/illustration.png';
+import illustration from './../assets/images/farm-illustration.svg';
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
@@ -35,10 +35,10 @@ function Index() {
         /></Col>
         <Col>
           <h1>Bitkinizin ihtiyacı olan tek şey artık sevgi!</h1>
-          <p><strong>FarmBot</strong> masanızda, balkonunuzda veya pencerenizdeki bitkiler için yapılmış açık kaynak sistemdir.</p>
-          <p><strong>FarmBot</strong> ile birlikte bitkinize ihtiyacı olan suyu, size ise bitkinizin bulunduğu ortam hakkında bilgileri veriyoruz.</p>
+          <p><strong>FarmBot</strong> bahçenizde, balkonunuzda veya pencerenizdeki bitkiler dahil birçok alanda uyarlanabilir açık kaynak sistemdir.</p>
+          <p><strong>FarmBot</strong> ile birlikte bitkilerinizin ihtiyacı olan suyu, size ise bitkilerinizin bulunduğu ortam hakkında bilgileri veriyoruz.</p>
           <p>
-            Yapmanız gerekenler çok basit <strong>FarmBotu</strong> Wi-Fi ve saksınıza bağlayın, hemen kullanmaya başlayın.
+            Yapmanız gerekenler çok basit <strong>FarmBotu</strong> Wi-Fi ve ortamla bağlayın, hemen kullanmaya başlayın.
           </p>
         </Col>
       </Row>

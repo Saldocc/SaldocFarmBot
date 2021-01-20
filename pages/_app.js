@@ -3,7 +3,6 @@ import { AuthProvider } from "./../contexts/AuthContext"
 import Head from 'next/head'
 import favicon from "../favicon.ico"
 
-// This default export is required in a new `pages/_app.js` file.
 export default function MyApp({ Component, pageProps }) {
   return (
     <>
