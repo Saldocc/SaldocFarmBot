@@ -83,7 +83,7 @@ const Index = ({ datas }) => {
               <div className="card-grid-wrapper-chart">
                 <Card className="chart-card">
                   <Card.Body className="center flex-column">
-                    <Iframe url="https://thingspeak.com/channels/1270376/charts/1?bgcolor=%23ffffff&color=%2300003a&dynamic=true&results=10&timescale=10&title=Oda+S%C4%B1cakl%C4%B1%C4%9F%C4%B1&type=spline&xaxis=S%C4%B1cakl%C4%B1k&yaxis=Zaman&width=auto&height=auto"
+                    <Iframe url="https://thingspeak.com/channels/1270376/charts/1?bgcolor=%23ffffff&color=%2300003a&dynamic=true&results=10&timescale=10&title=Ortam+S%C4%B1cakl%C4%B1%C4%9F%C4%B1&type=spline&xaxis=S%C4%B1cakl%C4%B1k&yaxis=Zaman&width=auto&height=auto"
                       width="100%"
                       height="100%"
                       display="block"
@@ -95,7 +95,7 @@ const Index = ({ datas }) => {
               <div className="card-grid-wrapper-chart">
                 <Card className="chart-card">
                   <Card.Body className="center flex-column">
-                    <Iframe url="https://thingspeak.com/channels/1270376/charts/2?bgcolor=%23ffffff&color=%2300003a&dynamic=true&results=10&timescale=10&title=Oda+S%C4%B1cakl%C4%B1%C4%9F%C4%B1&type=spline&xaxis=S%C4%B1cakl%C4%B1k&yaxis=Zaman&width=auto&height=auto"
+                    <Iframe url="https://thingspeak.com/channels/1270376/charts/2?bgcolor=%23ffffff&color=%2300003a&dynamic=true&results=10&title=Ortam+Nemi&type=spline&xaxis=Nem&yaxis=Zaman&width=auto&height=auto"
                       width="100%"
                       height="100%"
                       display="block"
@@ -107,7 +107,7 @@ const Index = ({ datas }) => {
               <div className="card-grid-wrapper-chart">
                 <Card className="chart-card">
                   <Card.Body className="center flex-column">
-                    <Iframe url="https://thingspeak.com/channels/1270376/charts/3?bgcolor=%23ffffff&color=%2300003a&dynamic=true&results=10&timescale=10&title=Oda+S%C4%B1cakl%C4%B1%C4%9F%C4%B1&type=spline&xaxis=S%C4%B1cakl%C4%B1k&yaxis=Zaman&width=auto&height=auto"
+                    <Iframe url="https://thingspeak.com/channels/1270376/charts/3?bgcolor=%23ffffff&color=%2300003a&dynamic=true&results=10&title=Ortam+I%C5%9F%C4%B1k+Seviyesi&type=spline&xaxis=I%C5%9F%C4%B1k+Seviyesi&yaxis=Zaman&width=auto&height=auto"
                       width="100%"
                       height="100%"
                       display="block"
@@ -119,7 +119,7 @@ const Index = ({ datas }) => {
               <div className="card-grid-wrapper-chart">
                 <Card className="chart-card">
                   <Card.Body className="center flex-column">
-                    <Iframe url="https://thingspeak.com/channels/1270376/charts/4?bgcolor=%23ffffff&color=%2300003a&dynamic=true&results=10&timescale=10&title=Oda+S%C4%B1cakl%C4%B1%C4%9F%C4%B1&type=spline&xaxis=S%C4%B1cakl%C4%B1k&yaxis=Zaman&width=auto&height=auto"
+                    <Iframe url="https://thingspeak.com/channels/1270376/charts/4?bgcolor=%23ffffff&color=%2300003a&dynamic=true&results=10&title=Toprak+Nemi&type=spline&xaxis=Nem&yaxis=Zaman&width=auto&height=auto"
                       width="100%"
                       height="100%"
                       display="block"
@@ -130,8 +130,28 @@ const Index = ({ datas }) => {
               </div>
               <div className="card-grid-wrapper-chart">
                 <Card className="chart-card">
-                  <Card.Body className="center flex-column">
-                    <h3></h3>
+                  <Card.Body className="d-flex justify-content-center flex-column">
+                    <h4>Güncel sistem verileri:</h4>
+                    <div>
+                      <span>Ortam Sıcaklığı: </span>
+                      <span>{field1}</span>
+                    </div>
+                    <div>
+                      <span>Ortam Nemi: </span>
+                      <span>{field2}</span>
+                    </div>
+                    <div>
+                      <span>Ortam Işık Seviyesi: </span>
+                      <span>{field3}</span>
+                    </div>
+                    <div>
+                      <span>Toprak Nemi: </span>
+                      <span>{field4}</span>
+                    </div>
+                    <div>
+                      <span>Motor Durumu: </span>
+                      <span>{field5 == 0 ? "OFF" : "ON"}</span>
+                    </div>
                   </Card.Body>
                 </Card>
               </div>
